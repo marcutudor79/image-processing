@@ -5,4 +5,4 @@
 
 1. Please refer to the git install tutorial [here](docs/README-setup.md).
 
-2. Please refer to the git tutorial [here]().
+2. Please refer to the git tutorial [here](docs/README-git-tutorial.md).
