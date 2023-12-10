@@ -10,7 +10,7 @@ import cv2
 
 def segmentation_transform(img, choice):
 
-    # Segmentation
+    # Slicing
     if choice == 1:
 
         Tb = 255
