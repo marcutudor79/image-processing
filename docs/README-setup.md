@@ -57,7 +57,7 @@ For a better comparison, you can refer to this [brief article.](https://www.geek
 
 5. Clone the repo by using the command.
 ```
-    git clone git@github.com:marcutudor79/image-processing.git
+    git clone git@github.com:marcutudor79/image-processing-ETTI-mi.git
 ```
 
 6. Now you should see all the files from the repo locally on your computer.
