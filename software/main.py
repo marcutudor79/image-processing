@@ -26,6 +26,9 @@ def main():
     # running mdb003 through the transformation pipeline
     path     = r'../breastcancer_database/mdb003.pgm'
     img_in   = plt.imread(path)
+    plt.plot()
+    plt.imshow(img_in, cmap = 'gray')
+    plt.show()
     img_out_list = []
     
     # run contast_transform library
@@ -60,6 +63,9 @@ def main():
     # running mdb0028 through the transformation pipeline
     path     = r'../breastcancer_database/mdb028.pgm'
     img_in   = plt.imread(path)
+    plt.plot()
+    plt.imshow(img_in, cmap = 'gray')
+    plt.show()
     img_out_list = []
     
     # run contast_transform library
@@ -93,6 +99,9 @@ def main():
     # running mdb099 through the transformation pipeline
     path     = r'../breastcancer_database/mdb099.pgm'
     img_in   = plt.imread(path)
+    plt.plot()
+    plt.imshow(img_in, cmap = 'gray')
+    plt.show()
     img_out_list = []
     
     # run contast_transform library
@@ -127,6 +136,9 @@ def main():
     # running mdb021 through the transformation pipeline
     path     = r'../breastcancer_database/mdb021.pgm'
     img_in   = plt.imread(path)
+    plt.plot()
+    plt.imshow(img_in, cmap = 'gray')
+    plt.show()
     img_out_list = []
     
     # run contast_transform library
