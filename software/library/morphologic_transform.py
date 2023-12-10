@@ -14,11 +14,11 @@ def morphologic_transform(img_in, choice):
         return -1
     
     # validation 2: choice is between 0 and 2
-    if (choice < 0 or choice > 2):
+    if (choice < 1 or choice > 3):
         return -1
     
     # choice 0: errosion
-    if(choice == 0):
+    if(choice == 1):
         # define a structurant element
         struct_element = np.ones((10,10))
         
@@ -26,7 +26,7 @@ def morphologic_transform(img_in, choice):
         img_in = morpho.binary_erosion(img_in, struct_element)
     
     # choice 1: dilatation 
-    elif(choice == 1):
+    elif(choice == 2):
         # define a structurant element 
         struct_element = np.ones((10,10))
         
@@ -44,42 +44,3 @@ def morphologic_transform(img_in, choice):
      
     return img_in
         
-
-# debug
-path = r'mdb021.pgm' 
-img  = plt.imread(path)
-plt.figure()
-plt.imshow(img, cmap = 'gray')
-
-# binarize image
-prag                = 150
-img_bi              = np.zeros(img.shape, dtype = 'uint8')
-img_bi[img >= prag] = 255
-plt.figure()
-plt.imshow(img_bi, cmap = 'gray')
-
-# test function choice 0  
-img = morphologic_transform(img_bi, 0)
-plt.figure()
-plt.imshow(img, cmap = 'gray')
-
-# test function choice 1
-img = morphologic_transform(img_bi, 1)
-plt.figure()
-plt.imshow(img, cmap = 'gray')
-
-# test function choice 2
-img = morphologic_transform(img_bi, 2)
-plt.figure()
-plt.imshow(img, cmap = 'gray')
-   
-   
-
-
-        
-    
-    
-    
-    
-    
-

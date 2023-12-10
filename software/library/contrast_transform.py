@@ -12,10 +12,10 @@ def contrast_transform(img, choice):
     s = img.shape
     out = np.zeros((s[0], s[1]), dtype='uint8')
 
-    if choice == '1':
+    if choice == 1:
         out = (256 - 1) ** (img / 255) - 1
         title = 'Exponential Transformation'
-    elif choice == '2':
+    elif choice == 2:
         a, b, Ta, Tb = 100, 190, 0, 255
         for i in range(s[0]):
             for j in range(s[1]):
@@ -26,7 +26,7 @@ def contrast_transform(img, choice):
                 else:
                     out[i, j] = Tb
         title = 'Contrast Stretching Transformation'
-    elif choice == '3':
+    elif choice == 3:
         a, b, Ta, Tb = 100, 170, 50, 250
         img = img.astype('float')
         for i in range(s[0]):
@@ -45,24 +45,4 @@ def contrast_transform(img, choice):
         return None, None
 
     return out, title
-
-def main():
-    path = r'mdb028.pgm'
-    img = plt.imread(path)
-
-    while True:
-        transformation_choice = input("Choose transformation method (1: Exponential, 2: Contrast Stretching, 3: Linear) or 'exit' to end: ")
-
-        if transformation_choice.lower() == 'exit':
-            break
-
-        out, title = contrast_transform(img, transformation_choice)
-
-        if out is not None:
-            plt.figure()
-            plt.subplot(1, 2, 1), plt.imshow(img, cmap='gray'), plt.title('Original Photo')
-            plt.subplot(1, 2, 2), plt.imshow(out, cmap='gray'), plt.title(title)
-            plt.show()
-
-if __name__ == "__main__":
-    main()
+    
