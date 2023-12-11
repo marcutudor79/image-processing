@@ -11,7 +11,7 @@
 ```
 
 ## Requirements
-1. You can find the project structure requirements [here]()
+1. You can find the project structure requirements [here](docs/project-structure-reqs.pdf).
 2. You can find the algorithm requirements [here](docs/algorithm-structure-reqs.pdf).
 
 ## Documentation
