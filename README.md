@@ -24,5 +24,7 @@ In that document you will find:
 ## Presentation
 - Please refer to this [link](docs/presentation-breast-cancer-detection-methods-using-medical-imaging-techniques.pdf)
 
+## License
+GPL-3.0 license
 
 
